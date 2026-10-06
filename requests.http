@@ -8,3 +8,15 @@ Content-Type: application/json
 {
   "titulo": "Completar la práctica de Spring Boot"
 }
+
+### 3. Actualizar
+PUT http://localhost:8080/api/tasks/1
+Content-Type: application/json
+
+{
+  "titulo": "Terminar la práctica",
+  "estado": "EN PROGRESO"
+}
+
+### 4. Eliminar
+DELETE http://localhost:8080/api/tasks/1
