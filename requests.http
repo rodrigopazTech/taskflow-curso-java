@@ -1,15 +1,24 @@
-### 1. Obtener la lista de tareas (GET)
-GET http://localhost:8080/api/tasks
+# 1. Obtener la lista de tareas (GET)
+# GET http://localhost:8080/api/tasks
 
-### 2. Crear una nueva tarea (POST)
+### 1. Crear una nueva tarea (POST)
 POST http://localhost:8080/api/tasks
 Content-Type: application/json
 
 {
-  "titulo": "Completar la práctica de Spring Boot"
+  "titulo": 1
 }
 
-### 3. Actualizar
+### 2. Tarea invalida
+POST http://localhost:8080/api/tasks
+Content-Type: application/json
+
+{"titulo":""}
+
+### 3. Peticion a tarea sin existir
+GET http://localhost:8080/api/tasks/99999
+
+###
 PUT http://localhost:8080/api/tasks/2
 Content-Type: application/json
 
